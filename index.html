@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - Telkom Akses</title>
+    <style>
+        :root {
+            --primary-color: #d50000;
+            --text-color: #fff;
+            --secondary-color: #ff8a80;
+            --background-white: #ffffff;
+            --text-dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--background-white);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about, .services, .contact, .tutorial {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--background-white);
+            border-left: 6px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .about h2, .services h2, .contact h2, .tutorial h2 {
+            color: var(--primary-color);
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li::before {
+            content: "\1F4BB "; /* Emoji icon */
+            margin-right: 8px;
+        }
+
+        footer {
+            background-color: #b71c1c;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .contact-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .contact-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .contact-img img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            .contact-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-text {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PT Telkom Akses</h1>
+        <p>Solusi Infrastruktur Telekomunikasi Terdepan</p>
+    </header>
+
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#services">Layanan</a>
+        <a href="#tutorial">Tutorial</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>Tentang Telkom Akses</h2>
+        <p>PT Telkom Akses merupakan tulang punggung dalam pembangunan jaringan broadband di Indonesia. Kami hadir sebagai mitra terpercaya dalam mendukung konektivitas digital yang handal, melalui layanan pembangunan dan pemeliharaan jaringan fiber optik secara nasional. Dengan tenaga profesional dan komitmen tinggi terhadap kualitas, kami terus berinovasi dalam memenuhi kebutuhan infrastruktur digital masyarakat Indonesia.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <ul>
+            <li>Pembangunan Jaringan Fiber Optik</li>
+            <li>Pemeliharaan Infrastruktur Telekomunikasi</li>
+            <li>Instalasi dan Aktivasi Layanan IndiHome</li>
+        </ul>
+    </section>
+
+    <section id="tutorial" class="tutorial">
+        <h2>Tutorial Hosting dengan GitHub</h2>
+        <p>1. Buat akun GitHub di <a href="https://github.com" target="_blank">github.com</a>.</p>
+        <p>2. Buat repository baru dan beri nama sesuai keinginan Anda (contoh: my-website).</p>
+        <p>3. Upload file HTML/CSS/JS Anda ke repository tersebut.</p>
+        <p>4. Masuk ke Settings > Pages, pilih branch <strong>main</strong> dan folder <strong>/root</strong>.</p>
+        <p>5. GitHub akan menyediakan link website Anda secara gratis!</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak Saya</h2>
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>Nama: ADE PURNAMA</p>
+                <p>Email: adepurnama468@gmail.com</p>
+                <p>No. HP: 081284943512</p>
+                <div class="social-links">
+                    <a href="https://wa.me/081284943512" target="_blank">WhatsApp</a>
+                    <a href="https://instagram.com/rizkyadepurnama" target="_blank">Instagram</a>
+                </div>
+            </div>
+            <div class="contact-img">
+                <img src="mandalika.jpg" alt="Foto Degul">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Ade Purnama. Seluruh hak cipta dilindungi.
+    </footer>
+
+    <script>
+        // Animasi scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
